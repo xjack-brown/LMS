@@ -1,0 +1,537 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	无标题页
+</title>
+
+    <script language="javascript" type="text/javascript" src="JS/niceforms.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/niceforms-default.css" />
+
+    <script type="text/javascript">
+        function reset() {
+            document.forms[0].reset();
+        }
+    </script>
+
+    <style type="text/css">
+        tr
+        {
+            height: 24px;
+        }
+        .tablehead
+        {
+            text-align: center;
+        }
+        .tablerow
+        {
+            text-align: center;
+        }
+        .modalBackground
+        {
+            background-color: Gray;
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+        }
+        .modalPopup
+        {
+            background-color: #ebf2f8;
+            border-width: 2px;
+            border-color: #e6e7e1;
+            border-style: solid;
+            border-color: Gray;
+            padding: 10px 3px 4px;
+            width: 250px;
+        }
+        .longtext
+        {
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .title
+        {
+            font-size: medium;
+            color: #555;
+            font-weight: 400;
+            font-family: 微软雅黑,黑体,楷体GB2312;
+            padding-left:10px;
+        }
+        a
+        {
+        	color:#369;
+        	}
+        a:visited
+        {
+        	color:#369;}
+        
+    </style>
+    
+<link href="/WebResource.axd?d=GA8FrHw5P3ftLnlFP0m1Cb_Fxq7Z-ewjMGoNtuO_qhje6FafNC9B08ZM0YxHzoSDXCGybg2KGgQIQdq5WwzqU0MzHf3nNWkpr6AzmxIJYFoyRkJ2uJf7YtJSIGqYuG6xYPQapumo_J0rEhMMiyYdjdU4GO3sFGJM2z4WUz2JhLA1&amp;t=633868072140000000" type="text/css" rel="stylesheet" /></head>
+<body>
+    <form name="aspnetForm" method="post" action="./StaffManage.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" class="niceform">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=JRHa1Ju-hAHpWmyyJopquRV5jfSbaPQvgZxQ2VFc_j-Yu38_5gn2h5T8ZQk6El4yk4da_HIjrFOc3R360sau8BTUadKB2eO3Cw-WZtHa9pg1&amp;t=636284083041062709" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"zh-CN","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"¥","NaNSymbol":"NaN","CurrencyNegativePattern":2,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"上午","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402271999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027 H:mm:ss","LongDatePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027","LongTimePattern":"H:mm:ss","MonthDayPattern":"M月d日","PMDesignator":"下午","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"yyyy/M/d","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"yyyy\u0027年\u0027M\u0027月\u0027","AbbreviatedDayNames":["周日","周一","周二","周三","周四","周五","周六"],"ShortestDayNames":["日","一","二","三","四","五","六"],"DayNames":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"AbbreviatedMonthNames":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月",""],"MonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"IsReadOnly":true,"NativeCalendarName":"公历","AbbreviatedMonthGenitiveNames":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月",""],"MonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""]},"eras":[1,"公元",null,0]};//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=VHrJ2E6-Kqwv9LawGYqpsCivSFRSMjC5a5Q6Mj-tLCjxttnhvlC9YbjqDG_DD7U3M0Rjqbm3_DPrADBfAfX_hRMLf_Mo4ohNRQdsGnSiKnJQCkK53rgqQH474r3xZpxE7bdaLe77VGricMoDF5fhMP7l50ByG-4Fp0mOZuzGs7ZP8hQMpMmtzGXZvA7blQre0&amp;t=ffffffffae012fe4" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 客户端框架未能加载。');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=dLsinuIfhgEz0WYZRVfYyE4XN0ZsurBTiZpwgzYb_HlV0DzntxSW-MRhlm1viWQTFxm9Qy52DL3LCIXASiK8mTr1ntaMNVeIPa1ultijz5Q8tbUmBvdPTgRF-Q9jNvlv_mtfDwD6Z2S3RzBYI6wI9VoekfsSmV8ylSzYQ48xSTTKHm8_twd9HnWi63ZD0Iez0&amp;t=ffffffffae012fe4" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=7bm9FGFVH2QdDrnmAc5DLZw_HDFOwbl09TJdlPe01gTq1N4zEUalN0EvqkaUaYbzADwSCH1EJjxtJwARvv3pC4wklvs9X6S_WS-2-1nC3CXqR1l1O24FQFsltR6MDp8L82f1YFWpj8os9vj8CL0N7UD8wyX-eDJnQ7IxV28couE1&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Hev5VdnMmKaFP6VM3B78BUTCobIgV-g2pGvboafZWbBMVjijP6Jn0vIKQ2Dl3O6wcHLtO4pwbwv-W80Lq1vNO_pyqfgOlH7vNLuI_CQgxbTxCMaz99JJ-f88EMIjD3ly_5wd4sg3FHqkmKIcbYGkx3WWobNjrG0da5DncYxZbDY1&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wDRpU4SMUbLjJSRE-iIJgZDAxE5iRK4e7iL2w89si_bXosy3MXB8IxfZpIT2yPIQ1lf--GYdDVcUWyDaSBWs-rBucxLsfM9iV5-Wo5rflW0ktuun6Lp4Q6VgY49eXbZ96y4pm9920ku7_zJOeGlPpO9A5O3ryVAzw72fly7Vj0s1&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=kanHSPW1H_aOPyG0Yq57Gd-JWuV9Y5dQFbOa4fJbo9d8JRMfKqLzflVf4kQtTKTzLm7ozDUWGAf-wJH0PvWTXkZXObDN38BWjqaaqsahqE8rW-AWTwT6gAzmeqLs5lvRxN_1-ms47w8gBByXFfz8w3fbUNovNOxMYn6DoIlDxNc1&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NSZNWSRMhsPlokJoKodGkkrapLVNzDFHin6D2vp_A80QvtbdJntNT2C7w9vRGPkcsjPuodobSNiixEqgU34h0rPabTEd3hnnF7V9LHybRubH-dp9YyuhajIzBNnMlyNou97Q08_XlGEKtuci1v0ICK2JJ637ceSe3fqRCoXRtEI1&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ZolrHN4mPVjOfu05slqeWDNC-Lb2Cv-bCH67G41PSbGPmguF7ZK_ScN7Z6hNwNi1kw8UiIyEHenQVHVnXBCrsEUGcJY7JUoKzbRmYiAX03wBVCEvc_Q6lY0ej2FaMS5h1bbVtWBWWa32ObGZQa1bAfHdnP6VIyE0xoHJDa32VzvmWaJbKDESpRigXQQ0BKbC0&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=YdtVUdjfSINNhk-nF0H6wZ-uVTQcsVNxG6V4P7ZZfeS3h3zhomOIJKRy5V0fnqUBgU6hDJ8_O_W7oTU4aOrpMl_dg1b0e8bN7INjkj76DkWtFGLlt0_02oXNiQZCZhPfHNPJkPqIwQHSFG4LdejYUDyHGyPHtZjfCkNQjQMeHxvbN430_DHfgeYD9eYTPFw50&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=IFgM-WU33fftEz97ce6hharU0qjm7EfC5cPLng-jV9fmnaDe7gmsiZ3z673uqANJ1csLDK9V1m7QSYhwbCqMhPaNkPegm5JoMriTO93grLePVFW-YllIXzVcslqNvrSrexsVYkvzI199SDF0HIDiKdt0GCbgBQAI8hvqCjVF4UE1&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=0qKEKEIXbXQ1SFpKGvNOUUHpnTIn4FDblpFUL6mWBG2JY2uHBWMw73iu4Mbbt3kV0SjOPoasm0Kobl6UgUaXOL8-IsnR9qMXsdSY9wWqo8LgE7yYU3KXllt3BMjE1Khofps0nhPB1e2pW5QtyWm_bSXPd8dN4Z7Eub1rGo5JpM3ymboA4nGeCiPqQbUucW5V0&amp;t=6f05acf6" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CWrV0rloRk4EXXszPW_KDiimCE7ff7X2lrCn2m6RLYbR9mha3GxUSRq1FLv2kva6jIPgWkoQLQNidYB7W1cmbtqCMpO8yE4-H4wiUFrt8BR_jG9Po0urKilnCZ6jDMmVVhj-ZPe_zOvWx_J1MKwViimz4DObF_X4TtlfulM5xwHwq9u8TwLF7xC_97sPCPiF0&amp;t=6f05acf6" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;
+return true;
+}
+//]]>
+</script>
+
+    <div style="text-align: center;">
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+    <fieldset style="margin-left: auto; margin-right: auto; text-align: left; width: 820px">
+        <div class="title">
+            用户信息维护</div>
+        <hr />
+        <table width="100%">
+            <tr>
+                <td>
+                    姓名:
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtUserName" type="text" maxlength="20" id="ctl00_ContentPlaceHolder1_txtUserName" />
+                </td>
+                <td>
+                    电话:
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtPhone" type="text" maxlength="20" id="ctl00_ContentPlaceHolder1_txtPhone" />
+                </td>
+                <td>
+                    添加时间
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtSInTime" type="text" id="ctl00_ContentPlaceHolder1_txtSInTime" readonly="true" />
+                    
+                </td>
+                <td>
+                    至
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtEInTime" type="text" id="ctl00_ContentPlaceHolder1_txtEInTime" readonly="true" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    性别:
+                </td>
+                <td>
+                    <table id="ctl00_ContentPlaceHolder1_rblSex" border="0">
+	<tr>
+		<td><input id="ctl00_ContentPlaceHolder1_rblSex_0" type="radio" name="ctl00$ContentPlaceHolder1$rblSex" value="0" /><label for="ctl00_ContentPlaceHolder1_rblSex_0">男</label></td><td><input id="ctl00_ContentPlaceHolder1_rblSex_1" type="radio" name="ctl00$ContentPlaceHolder1$rblSex" value="1" /><label for="ctl00_ContentPlaceHolder1_rblSex_1">女</label></td><td><input id="ctl00_ContentPlaceHolder1_rblSex_2" type="radio" name="ctl00$ContentPlaceHolder1$rblSex" value="%" checked="checked" /><label for="ctl00_ContentPlaceHolder1_rblSex_2">不限</label></td>
+	</tr>
+</table>
+                </td>
+                <td>
+                    已删除
+                </td>
+                <td>
+                    <table id="ctl00_ContentPlaceHolder1_rblIsDelete" border="0">
+	<tr>
+		<td><input id="ctl00_ContentPlaceHolder1_rblIsDelete_0" type="radio" name="ctl00$ContentPlaceHolder1$rblIsDelete" value="1" /><label for="ctl00_ContentPlaceHolder1_rblIsDelete_0">是</label></td><td><input id="ctl00_ContentPlaceHolder1_rblIsDelete_1" type="radio" name="ctl00$ContentPlaceHolder1$rblIsDelete" value="0" checked="checked" /><label for="ctl00_ContentPlaceHolder1_rblIsDelete_1">否</label></td><td><input id="ctl00_ContentPlaceHolder1_rblIsDelete_2" type="radio" name="ctl00$ContentPlaceHolder1$rblIsDelete" value="%" /><label for="ctl00_ContentPlaceHolder1_rblIsDelete_2">不限</label></td>
+	</tr>
+</table>
+                </td>
+                <td>
+                    修改时间
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtSAlterTime" type="text" id="ctl00_ContentPlaceHolder1_txtSAlterTime" readonly="true" />
+                    
+                </td>
+                <td>
+                    至
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtEAlterTime" type="text" id="ctl00_ContentPlaceHolder1_txtEAlterTime" readonly="true" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    账号:
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtAccount" type="text" maxlength="20" id="ctl00_ContentPlaceHolder1_txtAccount" />
+                </td>
+                <td>
+                    E-mail:
+                </td>
+                <td>
+                    <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtEmail" />
+                </td>
+                <td>
+                    角色:
+                </td>
+                <td>
+                    <select name="ctl00$ContentPlaceHolder1$urRole$ddlRole" id="ctl00_ContentPlaceHolder1_urRole_ddlRole">
+	<option selected="selected" value="%">不限</option>
+	<option value="1">系统管理员</option>
+	<option value="2">财务管理员</option>
+	<option value="3">运输管理员</option>
+	<option value="4">调度员</option>
+	<option value="5">承运业务员</option>
+
+</select>
+
+                </td>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="检索" id="ctl00_ContentPlaceHolder1_btnSearch" />
+                    <input id="btnReset" onclick="reset();" type="button" value="重置" />
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <div>
+	<table cellspacing="1" cellpadding="4" border="0" id="ctl00_ContentPlaceHolder1_gvUserInfo" style="color:#333333;width:100%;">
+		<tr align="center" style="color:White;background-color:#507CD1;font-weight:bold;">
+			<th class="longtext" scope="col" style="width:60px;">姓名</th><th scope="col">性别</th><th scope="col">账号</th><th scope="col">电话</th><th class="longtext" scope="col" style="width:100px;">E-mail</th><th scope="col">角色</th><th scope="col">添加时间</th><th scope="col">删除</th><th scope="col">修改时间</th><th scope="col">操作</th>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_Label1" class="longtext" title="汉灵帝" style="display:inline-block;width:60px;">汉灵帝</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_Sex">男</span>
+                    </td><td>admin</td><td>13568545215</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_Label4" class="longtext" title="admin@xmstc.cn" style="display:inline-block;width:100px;">admin@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_RoleID">系统管理员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_Label2">2009/9/10 14:38:00</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_Label3">2009/9/10 16:16:35</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl02$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl02$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:White;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_Label1" class="longtext" title="公孙瓒" style="display:inline-block;width:60px;">公孙瓒</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_Sex">男</span>
+                    </td><td>xmstccw</td><td>13616061827</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_Label4" class="longtext" title="xmstccw@xmstc.cn" style="display:inline-block;width:100px;">xmstccw@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_RoleID">财务管理员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_Label2">2009/9/10 15:38:18</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_Label3">2009/9/10 15:38:18</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl03$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl03$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_Label1" class="longtext" title="张飞" style="display:inline-block;width:60px;">张飞</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_Sex">男</span>
+                    </td><td>xmstcys</td><td>0593-6332211</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_Label4" class="longtext" title="xmstcys@xmstc.cn" style="display:inline-block;width:100px;">xmstcys@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_RoleID">运输管理员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_Label2">2009/9/10 15:39:54</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_Label3">2009/9/10 15:39:54</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl04$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl04$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:White;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_Label1" class="longtext" title="诸葛亮" style="display:inline-block;width:60px;">诸葛亮</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_Sex">男</span>
+                    </td><td>xmstcdd</td><td>13559273615</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_Label4" class="longtext" title="xmstcdd@xmstc.cn" style="display:inline-block;width:100px;">xmstcdd@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_RoleID">调度员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_Label2">2009/9/10 15:41:17</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_Label3">2009/9/10 15:41:17</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl05$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl05$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_Label1" class="longtext" title="文丑" style="display:inline-block;width:60px;">文丑</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_Sex">男</span>
+                    </td><td>xmstccy</td><td>13526374827</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_Label4" class="longtext" title="xmstccy@xmstc.cn" style="display:inline-block;width:100px;">xmstccy@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_RoleID">承运业务员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_Label2">2009/9/10 15:42:15</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_Label3">2009/9/10 15:42:15</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl06_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl06$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        
+                            <a style="display:" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:White;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_Label1" class="longtext" title="孙静" style="display:inline-block;width:60px;">孙静</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_Sex">男</span>
+                    </td><td>shuenjing</td><td>13948574635</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_Label4" class="longtext" title="shuenjing@xmstc.cn" style="display:inline-block;width:100px;">shuenjing@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_RoleID">财务管理员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_Label2">2009/9/10 15:47:46</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_Label3">2009/9/10 15:47:46</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl07$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl07$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_Label1" class="longtext" title="华雄" style="display:inline-block;width:60px;">华雄</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_Sex">男</span>
+                    </td><td>huanxiong</td><td>0593-8888888</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_Label4" class="longtext" title="huanxiong@xmstc.cn" style="display:inline-block;width:100px;">huanxiong@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_RoleID">运输管理员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_Label2">2009/9/10 15:58:38</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_Label3">2009/9/10 15:58:38</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl08$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl08$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:White;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_Label1" class="longtext" title="陆逊" style="display:inline-block;width:60px;">陆逊</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_Sex">男</span>
+                    </td><td>luxun</td><td>13616062938</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_Label4" class="longtext" title="luxun@xmstc.cn" style="display:inline-block;width:100px;">luxun@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_RoleID">系统管理员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_Label2">2009/9/10 16:57:39</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_Label3">2009/9/10 16:57:39</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl09$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl09$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_Label1" class="longtext" title="黄盖" style="display:inline-block;width:60px;">黄盖</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_Sex">男</span>
+                    </td><td>huanggai</td><td>13616062938</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_Label4" class="longtext" title="huanggai@xmstc.cn" style="display:inline-block;width:100px;">huanggai@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_RoleID">承运业务员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_Label2">2009/9/10 16:59:08</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_Label3">2009/9/10 16:59:08</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl10$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl10$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr style="background-color:White;">
+			<td class="longtext" style="width:60px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_Label1" class="longtext" title="董卓" style="display:inline-block;width:60px;">董卓</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_Sex">男</span>
+                    </td><td>dongzuo</td><td>0592-6666666</td><td class="longtext" style="width:100px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_Label4" class="longtext" title="dongzuo@xmstc.cn" style="display:inline-block;width:100px;">dongzuo@xmstc.cn</span>
+                    </td><td style="width:80px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_RoleID">调度员</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_Label2">2009/9/10 16:59:57</span>
+                    </td><td>
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_lblIsDelete">否</span>
+                    </td><td style="width:110px;">
+                        <span id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_Label3">2009/9/10 16:59:57</span>
+                    </td><td style="width:55px;">
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_lbtnEdit" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl11$lbtnEdit&#39;,&#39;&#39;)">编辑</a>
+                        <a id="ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_lbtnDelete" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo$ctl11$lbtnDelete&#39;,&#39;&#39;)">删除</a>
+                            <a style="display:none" href="javascript:alert('该员工尚有未接收的承运单，无法删除！')">删除</a>
+                        
+                    </td>
+		</tr><tr align="center" style="color:White;background-color:#2461BF;">
+			<td colspan="10"><table border="0">
+				<tr>
+					<td><span>1</span></td><td><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$gvUserInfo&#39;,&#39;Page$2&#39;)" style="color:White;">2</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+</div>
+        <br />
+        
+    </fieldset>
+
+    </div>
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CF213B0F" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="PVHSL1/UCk/klv9zZcgPrVSr+/NVu7lQDpBhxPI7US0sXskAOfTBXEe9/P+E8v2qXbyNnAjhn9JoC0Vo0njpr1MVqck0DPM28yaGzUje4YKxw8VwzYOf/LQj8qexnXk+ygsAD4G6ZCGl7K5OG7ZWJON/cGd/mZbGKpk7L8QlvIfXKzxFYmSm7JbBd3Wj+/idAVOktd09buTZoc90hB+ddnDdbp7h5heVor0ojC7ofkYjCz6ReoOo+upcT5epPiP0X16X9i5h23c0He60K7OgPWnrSlvwdTAUYall0MWDxv3hRiK5F+wwFb1Oz/M9LW6m6J0P15cMcbCvo2/w3a8VL+sIRh1TqW+2jIlqOT5NR6I1Ex7tgLJWLTSQrO8fz1NiyZ1KjWWK2+WyPXjEDJibHEdFdxMGLk7asVg1noQRhRX2J01s/e87JTo2w0fMhYHMjvC+5vuUxZTszvXBfTnnA8uCK9XWB4xLZhrL59uAr+9kYeqQNe14GmIN+2apmykew5DY2nR7DwppzZ+6feYvJi3GuRyD4yuH6EylCQ22uHb8llYUxIt4gg79YkwsC2SaA8zO34EgUapHmHXPsYERbbDLLRkGN+PPHkf4CUOw0l+YmFEl7PvWt97FiAuGroEaREDlUjDU5HWJxU4tHb7nV9wFnUmt/1uORhUeasR9AFEJGW2XkaFSkhjX0SAYJbJKk5vS0uUoIabMwBvTGZgAwQ4My9xWnbWpXe/pH/lNqBapfjy9I5Fb2ug9t+4PuzpcaNXfIJ4adPG4qvgq7gMvkFmm2cC9QjzHsLRv0ONxxrE03UxmKi2u11giqCr8qb+T4RJjGUp4oxzLiyWQb9DGhBznVJBHQe0U2AoMjYnGUSrocywUAKNFPyzkgE7kjhjprp2tdgnipcTIZ9utatBtRivmx26VLhpcuuA4kIuKMUjZJK7HgRHO6hgTWsAuLFZlbtMQTBtr1sG3mOLnRGT/SxpkyqMkAShzpjGG6qdm4yL6EnaP4+cHv9yyVj1jSYHZ8M3UwSGhelG3jT0F9gnhSQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlaceHolder1_txtSInTime"),"id":"ctl00_ContentPlaceHolder1_txtSInTime_CalendarExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_txtSInTime"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlaceHolder1_txtEInTime"),"id":"ctl00_ContentPlaceHolder1_txtEInTime_CalendarExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_txtEInTime"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlaceHolder1_txtSAlterTime"),"id":"ctl00_ContentPlaceHolder1_txtSAlterTime_CalendarExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_txtSAlterTime"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlaceHolder1_txtEAlterTime"),"id":"ctl00_ContentPlaceHolder1_txtEAlterTime_CalendarExtender"}, null, null, $get("ctl00_ContentPlaceHolder1_txtEAlterTime"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl02_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl03_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl04_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl05_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl07_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl08_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl09_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl10_lbtnDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ConfirmButtonBehavior, {"ConfirmText":"确认要删除吗?","id":"ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_ConfirmButtonExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_gvUserInfo_ctl11_lbtnDelete"));
+});
+//]]>
+</script>
+</form>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"764e8f3685344cbab5f758127195d00b"}
+</script>
+<script type="text/javascript" src="http://localhost:4512/082f31be78cc491c9385540b558ea7ec/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>

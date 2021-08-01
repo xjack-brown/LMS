@@ -1,0 +1,90 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	XMSTC物流管理平台
+</title><link rel="stylesheet" type="text/css" href="CSS/login.css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 381px;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+    <div>
+        <div id="main">
+            <div id="top">
+            </div>
+            <div id="logo">
+            </div>
+            <div id="login">
+                <table width="100%" border="0">
+                    <tr>
+                        <td class="style1">
+                            &nbsp;
+                        </td>
+                        <td width="187px">
+                            <div id="inputs">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            用户名：
+                                        </td>
+                                        <td>
+                                            <input name="txtAccount" type="text" id="txtAccount" />
+                                            <span id="RequiredFieldValidator1" style="color:Red;display:none;"></span>
+                                            <input type="hidden" name="ValidatorCalloutExtender1_ClientState" id="ValidatorCalloutExtender1_ClientState" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                                        </td>
+                                        <td>
+                                            <input name="txtPassword" type="password" id="txtPassword" />
+                                            <span id="RequiredFieldValidator2" style="color:Red;display:none;"></span>
+                                            <input type="hidden" name="ValidatorCalloutExtender2_ClientState" id="ValidatorCalloutExtender2_ClientState" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            验证码：
+                                        </td>
+                                        <td>
+                                            <input name="txtVerifyCode" type="text" id="txtVerifyCode" class="chknumber_input" style="margin-bottom: 3px;
+                                                margin-left: -10px;" />
+                                            <img src="VerifyImage.ashx" alt="看不清,点击更换!" style="margin-top: 0px;" onclick="this.src=this.src+'?'" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="buttons">
+                                <div class="button">
+                                    <input type="image" name="ibtnLogin" id="ibtnLogin" src="Images/login_dl.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ibtnLogin&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:20px;width:57px;border-width:0px;" />
+                                    <br />
+                                    <br />
+                                    <div class="button">
+                                        <img src="images/login_cz.gif" alt="" width="57" height="20" onclick="reset();" style="cursor: pointer" /></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="bottom">
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+</body>
+</html>
