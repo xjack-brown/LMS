@@ -89,7 +89,7 @@
                                             <asp:TextBox ID="TextBox3" runat="server" Width="120px"></asp:TextBox>
                                             <br/>
                                             <%--<asp:Image ID="Image1" ImageUrl="~/CheckCode.aspx" onclick="this.src=this.src+'?'" ToolTip="看不清我，就点一下我吧！" runat="server" />--%>
-                                            <asp:Image ID="Image1" ImageUrl="~/CheckCode.aspx" onclick="this.src=this.src+'?'" Width="120px" Height="15px" ToolTip="看不清我，就点一下我吧！" runat="server" />
+                                            <asp:Image ID="Image1" ImageUrl="<%--~/CheckCode.aspx--%>" onclick="this.src=this.src+'?'" Width="120px" Height="15px" ToolTip="看不清我，就点一下我吧！" runat="server" />
                                         </td>
                                     </tr>
                                 </table>
